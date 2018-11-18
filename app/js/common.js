@@ -17,6 +17,24 @@ $(document).ready(function() {
        api.bind('close:finish', function() {
               $('.hamburger').removeClass('is-active');
        });
+
+
+
+   //////Magnific
+    $('.gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+                enabled:true
+            }
+        });
+    });
+
+
+
+
+
 });
 
 
