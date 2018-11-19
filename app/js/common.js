@@ -34,7 +34,36 @@ $(document).ready(function() {
 
 
 
-
 });
+// var div = document.getElementById("portfolio"),
+//          h = document.createElement("h1"),
+//          p  = document.createElement("p"),
+//          a = document.createElement("span");
+//
+//          div.className = "p-wrap";
+//         h.innerText = 'Start Up';
+//         p.innerText = 'Вся структура сайта под единую\nзадачу - офрмление заказа. Мы показываем\nбольше изображения товаров, акцентируем ...';
+//         a.creatClass = "btn";
+//         a.innerText = "Узнать больше";
+//         div.appendChild(h);
+//         div.appendChild(p);
+//         div.appendChild(a);
+//
+//
+//        console.log(div);
+//        console.log(portfolio);
 
 
+
+
+
+// <section class="p-text-block">
+// 						   <article class="p-active my_flex my_fcolumn">
+// 									<h1>Start Up</h1>
+// 								<p>Вся структура сайта под единую
+// 								задачу - офрмление заказа. Мы показываем
+// 								больше изображения товаров, акцентируем ...
+// 						    	</p>
+// 									<span class="btn" >Узнать больше</span>
+// 						   </article>
+// 					    </section>
