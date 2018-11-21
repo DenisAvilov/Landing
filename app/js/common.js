@@ -17,9 +17,6 @@ $(document).ready(function() {
        api.bind('close:finish', function() {
               $('.hamburger').removeClass('is-active');
        });
-
-
-
    //////Magnific
     $('.gallery').each(function() { // the containers for all your galleries
         $(this).magnificPopup({
@@ -30,6 +27,35 @@ $(document).ready(function() {
             }
         });
     });
+
+
+
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        stagePadding: 70,
+        loop:true,
+        margin:20,
+        merge:true,
+        nav:false,
+        dots: false,
+        URLhashListener:true,
+        autoplayHoverPause:false,
+        startPosition: 'URLHash',
+        items:1,
+        responsive:{
+            300:{
+                 items:1
+            },
+            600:{
+                stagePadding: 70,
+                items:2
+                },
+            1200:{
+                items:3
+                }
+        }
+    });
+
 
 
 
