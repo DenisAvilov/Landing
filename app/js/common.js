@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#my-menu').mmenu({
        extensions: [ "theme-white",  'pagedim-black', "border-full"],
            navbar: {
-           title: '<img src="img/Logo_DAD.png" alt="DAD">',
+           // title: '<img src="img/Logo_DAD.png" alt="DAD">',
            close: false
        },
        offCanvas: {
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
 
-    $('.owl-carousel').owlCarousel({
+    $('.first-slid').owlCarousel({
         center: true,
         stagePadding: 70,
         loop:true,
@@ -44,6 +44,7 @@ $(document).ready(function() {
         items:1,
         responsive:{
             300:{
+                stagePadding: 8,
                  items:1
             },
             600:{
@@ -57,10 +58,33 @@ $(document).ready(function() {
     });
 
 
-
-
+    $('.second-slid').owlCarousel({
+         center: true,
+                 stagePadding: 30,
+                 loop:true,
+                 margin:20,
+                 nav:false,
+                 dots: false,
+                 items:1,
+                 itemClass : "b-wrap",
+                 responsive:{
+                     300:{
+                         stagePadding: 8,
+                          items:1
+                     },
+                     600:{
+                         items:2
+                         },
+                     1200:{
+                         items:3,
+                         stagePadding: 100
+                         }
+                 }
+     });
 
 });
+
+
 // var div = document.getElementById("portfolio"),
 //          h = document.createElement("h1"),
 //          p  = document.createElement("p"),
