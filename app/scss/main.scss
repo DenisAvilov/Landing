@@ -94,6 +94,8 @@ h1 {
 header {
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
   .top-line {
     padding-top: 7px;
     padding-bottom: 5px;
@@ -1554,7 +1556,7 @@ main {
   }
 }
 
-footer {
+footer, .header-form {
   padding-top: 90px;
   background-image: url("../img/02/frond-list-1920.png");
   background-size: cover;
@@ -1682,6 +1684,53 @@ footer {
   }
 }
 
+.header-form{
+  background-color: black;
+  background-image: none;
+  width: 75%;
+  margin-left: auto;
+  position: absolute;
+  top:0;
+  right: -1500px;
+  bottom: 0;
+  z-index: 9999;
+  opacity: 1;
+  transition: all 1.5s ease;
+  input{
+    //line-height: 40px;
+    //margin-bottom: 35px;
+  }
+  @media screen and(min-width: 32rem) {
+  width: 50%;
+
+  }
+  .footer{
+    justify-content: center;
+    position: relative;
+
+  }
+  .close{
+    position: absolute;
+    content: "";
+    color: $main-color-btn;
+    font-size: 14px;
+    font-family: Conv_GoshaSans-Bold_my;
+    cursor: pointer;
+    padding: 7px;
+    top: -60px;
+    right: 43px;
+    &:hover{
+      color: darken($main-color-btn, 40);
+    }
+  }
+  @media screen and (min-width: 53rem){
+     padding-top: 100px;
+   }
+}
+.open{
+  right: 0;
+  opacity: 1;
+}
 @import "../libs/mmenu/dist/jquery.mmenu.all.css";
 //@import "../libs/hamburgers/dist/hamburgers.css";
 @import "../libs/magnific-popup/dist/magnific-popup.css";

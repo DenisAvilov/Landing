@@ -27,9 +27,6 @@ $(document).ready(function() {
             }
         });
     });
-
-
-
     $('.first-slid').owlCarousel({
         center: true,
         stagePadding: 70,
@@ -56,8 +53,6 @@ $(document).ready(function() {
                 }
         }
     });
-
-
     $('.second-slid').owlCarousel({
          center: true,
                  stagePadding: 30,
@@ -81,6 +76,16 @@ $(document).ready(function() {
                          }
                  }
      });
+
+
+
+    $("#know-more, #close").click(function () {
+        $(".header-form").toggleClass("open","header-form")
+
+    });
+    $("#close").click(function () {
+      $(".open").toggle()
+    })
 
 });
 
