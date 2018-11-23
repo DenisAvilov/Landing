@@ -78,14 +78,31 @@ $(document).ready(function() {
      });
 
 
-
+    //
     $("#know-more, #close").click(function () {
-        $(".header-form").toggleClass("open","header-form")
-
+        $(".header-form").toggleClass("open")
     });
-    $("#close").click(function () {
-      $(".open").toggle()
-    })
+
+    $(document).mouseup(function (e) {
+        var container = $(".header-form");
+        if (container.has(e.target).length === 0){
+            container.removeClass("open");
+        }
+    });
+
+
+
+
+
+
+$("#clickMe").click(function () {
+    $(".test").toggleClass("color");
+});
+
+    $(".test").click(function () {
+        $(".test").toggleClass("color");
+    });
+
 
 });
 

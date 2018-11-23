@@ -1,32 +1,25 @@
 @import "reset";
 @import "variables";
-
+@import "service";
 .my_flex {
   display: flex;
   flex-wrap: wrap;
 }
-
 .my_fcolumn {
   flex-direction: column;
-}
-
-;
+};
 .my_faround {
   justify-content: space-around;
 }
-
 .my_fbetveen {
   justify-content: space-between;
 }
-
 .my_fcenter {
   margin: auto;
 }
-
 .mm-menu_offcanvas {
   z-index: 999;
 }
-
 body {
   font: 500 100%/1.2 Gotham Pro;
 }
@@ -328,16 +321,13 @@ header {
     }
   }
 }
-
 .mm-panel_has-navbar .mm-navbar {
   border: none;
   padding-top: 6px;
 }
-
 .mm-panels, .mm-panels > .mm-panel {
   padding-top: 64px;
 }
-
 .mm-listitem {
   color: black;
   &:active {
@@ -1538,7 +1528,6 @@ main {
     }
   }
 }
-
 .h1-before {
   position: relative;
   z-index: 0;
@@ -1555,7 +1544,6 @@ main {
     }
   }
 }
-
 footer, .header-form {
   padding-top: 90px;
   background-image: url("../img/02/frond-list-1920.png");
@@ -1606,6 +1594,21 @@ footer, .header-form {
       border-right: none;
       text-align: center;
       border-bottom: 1px solid white;
+      transition: all 0.5s ease;
+      &:active,&:focus{
+        color: $main-color-btn;
+        letter-spacing: 1px;
+        border-color: $main-color-btn;
+      }
+      &:hover{
+        letter-spacing: 1px;
+        border-color: $main-color-btn;
+        transition: all 0.5s ease;
+        &::placeholder {
+            color: $main-color-btn;
+            opacity: 1;
+        }
+      }
       @media screen and (min-width: 53rem) {
       text-align: left;
       font-size: 20px;
@@ -1683,7 +1686,6 @@ footer, .header-form {
     }
   }
 }
-
 .header-form{
   background-color: black;
   background-image: none;
@@ -1695,6 +1697,7 @@ footer, .header-form {
   bottom: 0;
   z-index: 9999;
   opacity: 1;
+
   transition: all 1.5s ease;
   input{
     //line-height: 40px;
@@ -1731,6 +1734,16 @@ footer, .header-form {
   right: 0;
   opacity: 1;
 }
+.test{
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  background: #4bd963;
+}
+.color{
+  background: black;
+}
+
 @import "../libs/mmenu/dist/jquery.mmenu.all.css";
 //@import "../libs/hamburgers/dist/hamburgers.css";
 @import "../libs/magnific-popup/dist/magnific-popup.css";
