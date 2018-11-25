@@ -76,6 +76,28 @@ $(document).ready(function() {
                          }
                  }
      });
+    $('.persons-slider').owlCarousel({
+                 center: true,
+                 loop:true,
+                 margin: 0,
+                 // rtl:true,
+                 nav:true,
+                 dots: false,
+                 items:1,
+                 navClass: ['team-owl-prev','team-owl-next'],
+                 responsive:{
+                     300:{
+                          items:1
+                     },
+                     600:{
+                         items:3
+                         },
+                     1200:{
+                         items:5
+
+                         }
+                 }
+     });
 
 
     //

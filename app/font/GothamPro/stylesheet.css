@@ -46,6 +46,14 @@
 	font-weight: 500;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Conv_GothamPro_Light';
+	src: url('GothamProLight.eot');
+	src: local('☺'), url('GothamProLight.woff') format('woff'), url('GothamProLight.ttf') format('truetype'), url('GothamProLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 
 @font-face {
