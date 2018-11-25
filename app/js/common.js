@@ -27,6 +27,8 @@ $(document).ready(function () {
             }
         });
     });
+
+
     $('.first-slid').owlCarousel({
         center: true,
         stagePadding: 70,
@@ -109,19 +111,15 @@ $(document).ready(function () {
     $("#know-more, #close").click(function () {
         $(".header-form").toggleClass("open")
     });
-
     $(document).mouseup(function (e) {
         var container = $(".header-form");
         if (container.has(e.target).length === 0) {
             container.removeClass("open");
         }
     });
-
-
     $("#clickMe").click(function () {
         $(".test").toggleClass("color");
     });
-
     $(".test").click(function () {
         $(".test").toggleClass("color");
     });

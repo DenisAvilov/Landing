@@ -1,7 +1,6 @@
 @import "variables";
 
 .service {
-
   .top-line .full-menu a {
     &:hover {
       background-color: black;
@@ -54,7 +53,6 @@
 
   }
 }
-
 .m {
   &-section {
     padding-top: 155px;
@@ -210,7 +208,6 @@
   }
 }
 }
-
 .c{
   &-footer{
     @media screen and (max-width: 53rem) {
