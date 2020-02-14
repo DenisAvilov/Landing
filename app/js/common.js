@@ -1,4 +1,5 @@
 $(document).ready(function () {
+   
     $('#my-menu').mmenu({
         extensions: ["theme-white", 'pagedim-black', "border-full"],
         navbar: {
