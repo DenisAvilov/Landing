@@ -8,8 +8,6 @@ how to run
 
 ``` $bash
 npm install
-npm install gulp -g
 ```
-```
-gulp watch
+gulp start
 
